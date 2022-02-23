@@ -6,7 +6,7 @@ function Tokenizer(){
 
 }
 
-//aloha
+//alohaaa
 function testTokenizer(){
 
   var t = ........;
