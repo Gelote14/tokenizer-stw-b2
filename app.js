@@ -1,12 +1,28 @@
 function Tokenizer(){
     this.dictionary = [];
-    this.run = .....................
+    console.log("El diccionari es : " + this.dictionary);
+
+    this.run = function(llista){
+      console.log("S'ha introduit la llista : " + llista);
+      llista.forEach(i => this.searchItem(i));
+      };
+
+    this.searchItem = function(i){
+      if(this.diccionari[i]==undefined){
+        console.log("Funció indefinida : " + this.diccionari[i]);
+        this.onDefault();
+      }else{
+        console.log("Funció trobada : " + this.diccionari[i]);
+        this.diccionari[i]();
+      };
+    }
+    
     this.on = ......................
     this.onDefault = ...............
 
 }
 
-//alohaaa dñlkfasekfpoekfpempf
+
 function testTokenizer(){
 
   var t = ........;
